@@ -80,7 +80,8 @@ main {
   flex-direction: column;
   height: 100%;
   /* Ocupa todo el alto del section */
-  margin: 10px; /* Añade un margen de 10px alrededor de cada div */
+  margin: 10px;
+  /* Añade un margen de 10px alrededor de cada div */
 }
 
 .cajaImagenTexto>.imagenContainer {
@@ -134,7 +135,8 @@ main {
 .cajaVerde {
   margin-top: 10px;
   width: 100%;
-  background: linear-gradient(to bottom, #C3D973, #7D8C45); /* Cambiado a gradiente vertical */
+  background: linear-gradient(to bottom, #C3D973, #7D8C45);
+  /* Cambiado a gradiente vertical */
   text-align: center;
   color: white;
   display: flex;
@@ -178,70 +180,90 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 33%; /* Adjust as needed */
-  height: 350px; /* Smaller height */
+  width: 33%;
+  /* Adjust as needed */
+  height: 350px;
+  /* Smaller height */
   text-align: center;
   border: 1px solid black;
   border-radius: 10px;
   transition: all 0.3s ease;
   margin: 5px;
-  color: black; /* Default text color */
+  color: black;
+  /* Default text color */
 }
 
 /* Default style for the middle card (Card 2) - large, white text */
-.tarjetasContainer > div:nth-child(2) {
-  height: 450px; /* Larger height */
+.tarjetasContainer>div:nth-child(2) {
+  height: 450px;
+  /* Larger height */
   background: linear-gradient(to bottom, #C3D973, #7D8C45);
-  color: white; /* White text */
+  color: white;
+  /* White text */
 }
 
 /* --- Hover Effects --- */
 
 /* When the container is hovered, all cards revert to default small size and black text/background */
 .tarjetasContainer:hover .tarjeta {
-    height: 350px;
-    background: none;
-    color: black;
+  height: 350px;
+  background: none;
+  color: black;
 }
 
 /* Then, the specific hovered card becomes large with white text/background */
 .tarjetasContainer .tarjeta:hover {
-    height: 450px;
-    background: linear-gradient(to bottom, #C3D973, #7D8C45);
-    color: white;
+  height: 450px;
+  background: linear-gradient(to bottom, #C3D973, #7D8C45);
+  color: white;
 }
 
 /* Icon color changes when the container is hovered */
 .tarjetasContainer:hover #icono1 {
-    background-color: black; /* Default black when container is hovered */
+  background-color: black;
+  /* Default black when container is hovered */
 }
+
 .tarjetasContainer:hover #icono2 {
-    background-color: black; /* Becomes black when container is hovered */
+  background-color: black;
+  /* Becomes black when container is hovered */
 }
+
 .tarjetasContainer:hover #icono3 {
-    background-color: black; /* Default black when container is hovered */
+  background-color: black;
+  /* Default black when container is hovered */
 }
 
 /* Icon color changes when a specific card is hovered */
 #tarjeta1:hover #icono1 {
-    background-color: white; /* White when tarjeta1 is hovered */
+  background-color: white;
+  /* White when tarjeta1 is hovered */
 }
+
 #tarjeta2:hover #icono2 {
-    background-color: white; /* White when tarjeta2 is hovered */
+  background-color: white;
+  /* White when tarjeta2 is hovered */
 }
+
 #tarjeta3:hover #icono3 {
-    background-color: white; /* White when tarjeta3 is hovered */
+  background-color: white;
+  /* White when tarjeta3 is hovered */
 }
 
 /* Ensure default state for icons when container is not hovered */
 .tarjetasContainer:not(:hover) #icono1 {
-    background-color: black; /* Icon 1 is black by default */
+  background-color: black;
+  /* Icon 1 is black by default */
 }
+
 .tarjetasContainer:not(:hover) #icono2 {
-    background-color: white; /* Icon 2 is white by default */
+  background-color: white;
+  /* Icon 2 is white by default */
 }
+
 .tarjetasContainer:not(:hover) #icono3 {
-    background-color: black; /* Icon 3 is black by default */
+  background-color: black;
+  /* Icon 3 is black by default */
 }
 
 #icono1 {
@@ -343,78 +365,185 @@ main {
 }
 
 .tarjetasContainer:hover #icono4 {
-    background-color: black; /* Default black when container is hovered */
+  background-color: black;
+  /* Default black when container is hovered */
 }
-.tarjetasContainer:hover #icono5{
-    background-color: black; /* Becomes black when container is hovered */
+
+.tarjetasContainer:hover #icono5 {
+  background-color: black;
+  /* Becomes black when container is hovered */
 }
+
 .tarjetasContainer:hover #icono6 {
-    background-color: black; /* Default black when container is hovered */
+  background-color: black;
+  /* Default black when container is hovered */
 }
 
 /* Icon color changes when a specific card is hovered */
-#tarjeta4:hover #icono4{
-    background-color: white; /* White when tarjeta1 is hovered */
+#tarjeta4:hover #icono4 {
+  background-color: white;
+  /* White when tarjeta1 is hovered */
 }
+
 #tarjeta5:hover #icono5 {
-    background-color: white; /* White when tarjeta2 is hovered */
+  background-color: white;
+  /* White when tarjeta2 is hovered */
 }
+
 #tarjeta6:hover #icono6 {
-    background-color: white; /* White when tarjeta3 is hovered */
+  background-color: white;
+  /* White when tarjeta3 is hovered */
 }
 
 /* Ensure default state for icons when container is not hovered */
 .tarjetasContainer:not(:hover) #icono4 {
-    background-color: black; /* Icon 1 is black by default */
+  background-color: black;
+  /* Icon 1 is black by default */
 }
+
 .tarjetasContainer:not(:hover) #icono5 {
-    background-color: white; /* Icon 2 is white by default */
+  background-color: white;
+  /* Icon 2 is white by default */
 }
+
 .tarjetasContainer:not(:hover) #icono6 {
-    background-color: black; /* Icon 3 is black by default */
+  background-color: black;
+  /* Icon 3 is black by default */
 }
 
 .subscribe-form-container {
-    display: flex; /* Permite que el input y el botón se alineen horizontalmente */
-    border-radius: 30px; /* Bordes redondeados para todo el contenedor */
-    overflow: hidden; /* Asegura que los hijos se adapten al borde redondeado */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra sutil */
-    width: 100%;
-    max-width: 500px; /* Ancho máximo del componente */
-  }
+  display: flex;
+  /* Permite que el input y el botón se alineen horizontalmente */
+  border-radius: 30px;
+  /* Bordes redondeados para todo el contenedor */
+  overflow: hidden;
+  /* Asegura que los hijos se adapten al borde redondeado */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  /* Sombra sutil */
+  width: 100%;
+  max-width: 500px;
+  /* Ancho máximo del componente */
+}
 
-  /* Estilo para el campo de email */
-  .subscribe-form-container input[type="email"] {
-    flex-grow: 1; /* El campo de email ocupa el espacio restante */
-    padding: 18px 25px; /* Relleno interno (vertical, horizontal) */
-    border: none; /* Sin borde */
-    outline: none; /* Sin contorno al hacer foco */
-    font-size: 16px; /* Tamaño de la fuente */
-    background-color: #a7ad8f; /* Tono verde oliva claro para el campo */
-    color: #ffffff; /* Color del texto */
-  }
+/* Estilo para el campo de email */
+.subscribe-form-container input[type="email"] {
+  flex-grow: 1;
+  /* El campo de email ocupa el espacio restante */
+  padding: 18px 25px;
+  /* Relleno interno (vertical, horizontal) */
+  border: none;
+  /* Sin borde */
+  outline: none;
+  /* Sin contorno al hacer foco */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  background-color: #a7ad8f;
+  /* Tono verde oliva claro para el campo */
+  color: #ffffff;
+  /* Color del texto */
+}
 
-  /* Estilo para el placeholder del campo de email */
-  .subscribe-form-container input[type="email"]::placeholder {
-    color: #f0f0f0; /* Color del texto del placeholder (ligeramente más claro) */
-    opacity: 1; /* Asegura que sea completamente visible */
-  }
+/* Estilo para el placeholder del campo de email */
+.subscribe-form-container input[type="email"]::placeholder {
+  color: #f0f0f0;
+  /* Color del texto del placeholder (ligeramente más claro) */
+  opacity: 1;
+  /* Asegura que sea completamente visible */
+}
 
-  /* Estilo para el botón de suscripción */
-  .subscribe-form-container button {
-    padding: 18px 30px; /* Relleno interno (vertical, horizontal) */
-    border: none; /* Sin borde */
-    outline: none; /* Sin contorno al hacer foco */
-    background-color: #e87070; /* Color coral/rojo para el botón */
-    color: #ffffff; /* Color del texto del botón */
-    font-size: 16px; /* Tamaño de la fuente */
-    font-weight: bold; /* Texto en negrita */
-    cursor: pointer; /* Cursor de tipo puntero */
-    white-space: nowrap; /* Evita que el texto del botón se divida en múltiples líneas */
-    transition: background-color 0.3s ease; /* Transición suave para el hover */
-  }
+/* Estilo para el botón de suscripción */
+.subscribe-form-container button {
+  padding: 18px 30px;
+  /* Relleno interno (vertical, horizontal) */
+  border: none;
+  /* Sin borde */
+  outline: none;
+  /* Sin contorno al hacer foco */
+  background-color: #e87070;
+  /* Color coral/rojo para el botón */
+  color: #ffffff;
+  /* Color del texto del botón */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  font-weight: bold;
+  /* Texto en negrita */
+  cursor: pointer;
+  /* Cursor de tipo puntero */
+  white-space: nowrap;
+  /* Evita que el texto del botón se divida en múltiples líneas */
+  transition: background-color 0.3s ease;
+  /* Transición suave para el hover */
+}
 
-  /* Estilo para el botón al pasar el cursor por encima (hover) */
-  .subscribe-form-container button:hover {
-    background-color: #d96060; /* Un tono ligeramente más oscuro al hacer hover */
-  }
+/* Estilo para el botón al pasar el cursor por encima (hover) */
+.subscribe-form-container button:hover {
+  background-color: #d96060;
+  /* Un tono ligeramente más oscuro al hacer hover */
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preBlogText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+}
+
+.blogContent {
+  display: flex;
+  flex-direction: row; /* Arrange blog posts horizontally */
+  width: 80%; /* Occupy 80% of the parent width */
+  margin: 0 auto; /* Center the blog content */
+  justify-content: space-around; /* Distribute space around items */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.blogPost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px; /* Adjust margin between posts */
+  flex: 1; /* Allow flex items to grow and shrink */
+  min-width: 200px; /* Optional: minimum width for smaller screens */
+  max-width: 25%; /* Optional: maximum width to ensure 4 per row */
+}
+
+.blogImage {
+  width: 100%; /* Occupy full width of blogPost */
+  height: 550px; /* Aumenta la altura del contenedor de la imagen */
+  overflow: hidden; /* Hide overflowing parts of the image */
+}
+
+.blogPost figure {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure figure takes full width */
+  height: 100%; /* Ensure figure takes full height */
+}
+
+.blogPost figure img {
+  width: 100%; /* Image takes full width of figure */
+  height: 100%; /* Image takes full height of figure */
+  object-fit: contain; /* Asegura que la imagen se vea completa sin recortarse */
+  display: block;
+}
+
+.blogText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 10px; /* Add some padding inside the text container */
+  flex-grow: 1; /* Allow text to grow and fill space */
+}
+
+.blogText h3 {
+    margin-top: 10px; /* Add some space above the heading */
+    text-align: center; /* Center the heading text */
+}
