@@ -547,3 +547,124 @@ main {
     margin-top: 10px; /* Add some space above the heading */
     text-align: center; /* Center the heading text */
 }
+
+.textAndCards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between; /* Distribute space between cards */
+  margin-left: 50px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* --- Styles for the two cards within .cardsContainer --- */
+
+/* Base styles for the two cards (common properties) */
+.cardsContainer .tarjeta {
+  width: 48%; /* Adjust width slightly to account for margin */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin: 5px; /* Add some margin between cards */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Default state for tarjeta7 (large/gradient/white) */
+#tarjeta7 {
+  height: 450px;
+  background: linear-gradient(to bottom, #C3D973, #7D8C45);
+  color: white;
+}
+
+/* Default state for tarjeta8 (small/white/black) */
+#tarjeta8 {
+  height: 350px;
+  background-color: white;
+  color: black;
+}
+
+/* Styles for the icons (general properties) */
+#icono7, #icono8 {
+  width: 100px;
+  height: 100px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  display: inline-block;
+}
+
+/* Specific icon mask images */
+#icono7 {
+  -webkit-mask-image: url('images/man.svg');
+  mask-image: url('images/man.svg');
+}
+#icono8 {
+  -webkit-mask-image: url('images/woman.svg');
+  mask-image: url('images/woman.svg');
+}
+
+/* Default icon colors */
+#tarjeta7 #icono7 { background-color: white; } /* Icon in default large card */
+#tarjeta8 #icono8 { background-color: black; } /* Icon in default small card */
+
+
+/* --- Hover Effects --- */
+
+/* When tarjeta7 is hovered */
+#tarjeta7:hover {
+    /* Stays large/gradient/white - explicitly re-apply for clarity/specificity */
+    height: 450px;
+    background: linear-gradient(to bottom, #C3D973, #7D8C45);
+    color: white;
+}
+#tarjeta7:hover #icono7 { background-color: white; }
+
+/* When tarjeta7 is hovered, make tarjeta8 small/white/black */
+#tarjeta7:hover + #tarjeta8 {
+    height: 350px;
+    background-color: white;
+    color: black;
+}
+#tarjeta7:hover + #tarjeta8 #icono8 { background-color: black; }
+
+
+/* When tarjeta8 is hovered */
+#tarjeta8:hover {
+    /* Becomes large/gradient/white */
+    height: 450px;
+    background: linear-gradient(to bottom, #C3D973, #7D8C45);
+    color: white;
+}
+#tarjeta8:hover #icono8 { background-color: white; }
+
+/* When tarjeta8 is hovered, make tarjeta7 small/white/black */
+/* Using :has() pseudo-class to select a previous sibling based on a later sibling's state */
+/* Note: :has() has good support in modern browsers (Chrome, Edge, Firefox, Safari) */
+.cardsContainer:has(#tarjeta8:hover) #tarjeta7 {
+    height: 350px;
+    background: white; /* Changed from background-color to background */
+    color: black;
+}
+.cardsContainer:has(#tarjeta8:hover) #tarjeta7 #icono7 {
+    background-color: black;
+}
