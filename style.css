@@ -668,3 +668,59 @@ main {
 .cardsContainer:has(#tarjeta8:hover) #tarjeta7 #icono7 {
     background-color: black;
 }
+
+footer {
+  background: linear-gradient(to bottom, #C3D973, #7D8C45);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerContent {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  color: white;
+}
+
+.footerLinks ul {
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.footerLinks ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent, or set a specific color like black */
+}
+
+hr {
+  width: 80%;
+}
+
+.footerLogo p {
+  width: 70%;
+  text-align: justify;
+}
+.footerSocialMedia {
+  margin-top: 15px;
+}
+
+.footerSocialMedia ul {
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Assuming you want them in a row */
+  justify-content: center; /* Center the icons if needed */
+}
+
+.footerSocialMedia ul li {
+  margin: 0 10px; /* Add horizontal margin between list items */
+}
+
+.footerText {
+  color: white;
+}
