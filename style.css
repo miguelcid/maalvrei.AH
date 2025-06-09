@@ -125,17 +125,17 @@ main {
 }
 
 #palabraSuperar {
-  color: #2AB5B8;
+  color: #2ab5b8;
 }
 
 #palabraAdiccion {
-  color: #EA5A4C;
+  color: #ea5a4c;
 }
 
 .cajaVerde {
   margin-top: 10px;
   width: 100%;
-  background: linear-gradient(to bottom, #C3D973, #7D8C45);
+  background: linear-gradient(to bottom, #c3d973, #7d8c45);
   /* Cambiado a gradiente vertical */
   text-align: center;
   color: white;
@@ -197,7 +197,7 @@ main {
 .tarjetasContainer>div:nth-child(2) {
   height: 450px;
   /* Larger height */
-  background: linear-gradient(to bottom, #C3D973, #7D8C45);
+  background: linear-gradient(to bottom, #c3d973, #7d8c45);
   color: white;
   /* White text */
 }
@@ -214,7 +214,7 @@ main {
 /* Then, the specific hovered card becomes large with white text/background */
 .tarjetasContainer .tarjeta:hover {
   height: 450px;
-  background: linear-gradient(to bottom, #C3D973, #7D8C45);
+  background: linear-gradient(to bottom, #c3d973, #7d8c45);
   color: white;
 }
 
@@ -591,7 +591,7 @@ main {
 /* Default state for tarjeta7 (large/gradient/white) */
 #tarjeta7 {
   height: 450px;
-  background: linear-gradient(to bottom, #C3D973, #7D8C45);
+  background: linear-gradient(to bottom, #c3d973, #7d8c45);
   color: white;
 }
 
@@ -634,7 +634,7 @@ main {
 #tarjeta7:hover {
     /* Stays large/gradient/white - explicitly re-apply for clarity/specificity */
     height: 450px;
-    background: linear-gradient(to bottom, #C3D973, #7D8C45);
+    background: linear-gradient(to bottom, #c3d973, #7d8c45);
     color: white;
 }
 #tarjeta7:hover #icono7 { background-color: white; }
@@ -652,7 +652,7 @@ main {
 #tarjeta8:hover {
     /* Becomes large/gradient/white */
     height: 450px;
-    background: linear-gradient(to bottom, #C3D973, #7D8C45);
+    background: linear-gradient(to bottom, #c3d973, #7d8c45);
     color: white;
 }
 #tarjeta8:hover #icono8 { background-color: white; }
@@ -670,7 +670,7 @@ main {
 }
 
 footer {
-  background: linear-gradient(to bottom, #C3D973, #7D8C45);
+  background: linear-gradient(to bottom, #c3d973, #7d8c45);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -723,4 +723,235 @@ hr {
 
 .footerText {
   color: white;
+}
+
+/* --- Responsive Styles --- */
+
+@media (max-width: 768px) {
+  /* General adjustments for smaller screens */
+  body {
+    padding: 0 10px; /* Add some padding to the sides */
+  }
+
+  main {
+    padding: 0; /* Remove main padding if body has padding */
+  }
+
+  /* Header adjustments */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  header nav ul li {
+    margin: 5px 0; /* Adjust margin for stacked items */
+  }
+
+  /* Section adjustments */
+  .cajaImagenTexto,
+  .textAndCards {
+    flex-direction: column; /* Stack image/cards and text */
+    margin-top: 30px; /* Adjust top margin */
+  }
+
+  .cajaImagenTexto > div,
+  .textAndCards > div {
+    width: 100%; /* Make text and image/cards take full width */
+    margin-left: 0; /* Remove left margin */
+    padding: 0 10px; /* Add some horizontal padding */
+    box-sizing: border-box;
+  }
+
+  .cajaImagenTexto .imagenContainer,
+  .textAndCards .cardsContainer {
+      margin-top: 20px; /* Add space between stacked elements */
+  }
+
+
+  /* Card container adjustments */
+  .cajaConTarjetas .tarjetasContainer,
+  .textAndCards .cardsContainer {
+    flex-direction: column; /* Stack cards vertically */
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%; /* Make card container take full width */
+  }
+
+  .cajaConTarjetas .tarjeta,
+  .textAndCards .tarjeta {
+    width: 95%; /* Make individual cards wider */
+    margin: 10px auto; /* Add vertical margin and center */
+    height: auto; /* Allow height to adjust */
+  }
+
+  /* Reset default card sizes for mobile before hover */
+  .cajaConTarjetas .tarjeta,
+  .textAndCards .tarjeta {
+      height: auto !important; /* Override specific height for mobile */
+      background: white !important; /* Default white background */
+      color: black !important; /* Default black text */
+  }
+
+  /* Adjust specific default states if needed on mobile */
+  #tarjeta7 {
+      height: auto !important;
+      background: white !important;
+      color: black !important;
+  }
+
+
+  /* Blog adjustments */
+  .blogContent {
+    flex-direction: column; /* Stack blog posts */
+  }
+
+  .blogPost {
+    flex-direction: column; /* Stack image and text within post */
+    margin-bottom: 30px; /* Add space between posts */
+  }
+
+  .blogImage,
+  .blogText {
+    width: 100%; /* Make image and text take full width */
+  }
+
+  .blogImage {
+      margin-bottom: 15px; /* Space between image and text */
+  }
+
+  /* Footer adjustments */
+  footer {
+    padding: 20px 10px; /* Add padding to footer */
+  }
+
+  .footerContent {
+    flex-direction: column; /* Stack footer sections */
+    width: 100%; /* Make footer content take full width */
+    align-items: center; /* Center footer sections */
+  }
+
+  .footerLinks {
+    margin-bottom: 20px; /* Add space between stacked link sections */
+    text-align: center; /* Center text in link sections */
+  }
+
+  .footerLinks ul {
+      align-items: center; /* Center list items if flex column */
+  }
+
+  .footerSocialMedia ul {
+      justify-content: center; /* Center social media icons */
+  }
+
+  .footerLogo {
+      text-align: center; /* Center logo and text */
+      margin-bottom: 20px;
+  }
+
+  .footerLogo p {
+      width: 90%; /* Adjust paragraph width */
+      text-align: center; /* Center text */
+      margin: 10px auto; /* Center paragraph */
+  }
+
+  hr {
+      width: 90%; /* Adjust hr width */
+      margin: 20px auto; /* Center hr */
+  }
+
+  .footerText {
+      text-align: center; /* Center footer text */
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  /* Adjust font sizes for better readability on mobile */
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.5em; }
+  h3 { font-size: 1.2em; }
+  p { font-size: 1em; }
+  .cajaVerde p:first-child { font-size: 1.2em; }
+  .cajaVerde p:nth-child(2) { font-size: 1em; }
+
+  /* Adjust specific elements like buttons or forms */
+  #boton1, #boton2 {
+      padding: 10px 20px;
+      font-size: 1em;
+  }
+
+  .subscribe-form-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .subscribe-form-container input[type="email"] {
+      width: 90%;
+      margin-bottom: 10px;
+  }
+
+  .subscribe-form-container button {
+      width: 90%;
+  }
+
+  /* Adjust icon sizes if necessary */
+  #icono7, #icono8 {
+      width: 80px;
+      height: 80px;
+  }
+
+  /* Disable or adjust hover effects that might not work well on touch devices */
+  .cardsContainer:hover .tarjeta {
+      /* Revert to default mobile state on container hover */
+      height: auto !important;
+      background-color: white !important;
+      color: black !important;
+  }
+   .cardsContainer:hover .tarjeta #icono7,
+   .cardsContainer:hover .tarjeta #icono8 {
+       background-color: black !important;
+   }
+
+  /* Keep individual card hover for touch if needed, but adjust */
+  .cardsContainer .tarjeta:hover {
+      /* Apply hover styles */
+      height: auto !important; /* Keep auto height */
+      background: linear-gradient(to bottom, #c3d973, #7d8c45) !important;
+      color: white !important;
+  }
+   .cardsContainer .tarjeta:hover #icono7,
+   .cardsContainer .tarjeta:hover #icono8 {
+       background-color: white !important;
+   }
+
+   /* Ensure the non-hovered card doesn't shrink on mobile hover */
+   .cardsContainer:has(#tarjeta8:hover) #tarjeta7 {
+       height: auto !important;
+       background: white !important;
+       color: black !important;
+   }
+   .cardsContainer:has(#tarjeta8:hover) #tarjeta7 #icono7 {
+       background-color: black !important;
+   }
+}
+
+/* Optional: Add another media query for smaller phones */
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.3em; }
+    h3 { font-size: 1.1em; }
+    p { font-size: 0.9em; }
+
+    .cajaVerde p:first-child { font-size: 1.1em; }
+    .cajaVerde p:nth-child(2) { font-size: 0.9em; }
+
+    #icono7, #icono8 {
+        width: 60px;
+        height: 60px;
+    }
 }
