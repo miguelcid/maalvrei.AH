@@ -5,341 +5,380 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+	  <style>
+		#miAnimacion {
+		width: 300px;
+		height: 300px;
+		margin: auto;
+    }
+  </style>
   </head>
 
   <body>
-    <header>
-      <figure>
-        <img src="images/logo-item.svg" alt="Logo" />
-      </figure>
-      <nav>
-        <ul>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Home</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Sobre nosotros</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">¿Conoces a un adicto?</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Colabora</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Blog</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Preguntas Frecuentes</a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer">Contacta con nosotros</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="cajaImagenTexto">
-        <div class="textoContainer">
-          <h1 id="textoPrincipal">
-            ¿Quieres <span id="palabraSuperar">superar</span> tu
-            <span id="palabraAdiccion">adicción</span>?
-          </h1>
-          <p>Tu proceso importa. Y no tienes que hacerlo solo.</p>
-          <p>
-            Pronto lanzaremos la app de Addict Help, pensada para acompañarte en
-            tu recuperación: íntima personalizada y llena de motivación.
-          </p>
-          <p>
-            Suscríbete a nuestra newsletter y sé de los primeros en conocerla.
-          </p>
-          <p id="boton1">Suscríbete</p>
-          <h2>
-            El primer paso hacia tu recuperación, con el respaldo de
-            profesionales especializados.
-          </h2>
-        </div>
-        <div class="imagenContainer">
-          <figure>
-            <img src="images/chicoYPuerta.svg" alt="Ilustración de un chico decidiendo frente a dos puertas" />
-          </figure>
-        </div>
-      </section>
-      <section class="cajaVerde">
-        <p>
-          ¿Sabías que la adicción no es un fallo moral, sino una enfermedad
-          crónica del cerebro que puede tratarse con éxito?
-        </p>
-        <p>
-          La ciencia lo ha confirmado: igual que la diabetes o la hipertensión,
-          necesita seguimiento y apoyo.
-        </p>
-      </section>
-      <section class="cajaConTarjetas">
-        <p>¿Por qué nosotros?</p>
-        <h2>¿Por qué elegir nuestra app para tu recuperación?</h2>
-        <h2>Está pensada desde dentro de las adicciones.</h2>
-        <div class="tarjetasContainer">
-          <div class="tarjeta" id="tarjeta1">
-            <div id="icono1"></div>
-            <h3>Seguimiento Personalizado</h3>
-            <p>
-              Tu recuperación es única, y así debe ser tu camino. Con la app
-              podrás registrar tus hábitos, avances y emociones, y recibir
-              orientación adaptada a ti. …y, cuando llegue tu momento, te
-              orientamos hacia el recurso profesional que mejor encaje contigo.
-            </p>
-          </div>
-          <div class="tarjeta" id="tarjeta2">
-            <div id="icono2"></div>
-            <h3>En la Intimidad</h3>
-            <h4>Porque mereces cuidarte sin sentirte expuesto.</h4>
-            <p>
-              Recupérate a tu ritmo, sin presiones ni miradas ajenas. Nuestra
-              app te ofrece un espacio seguro, confidencial y accesible para
-              trabajar en ti, desde donde estés.
-            </p>
-          </div>
-          <div class="tarjeta" id="tarjeta3">
-            <div id="icono3"></div>
-            <h3>Motivación Continua</h3>
-            <p>
-              Sabemos que hay días más difíciles que otros. La app te ayuda a
-              mantener viva tu motivación con retos alcanzables, logros que
-              celebran tu esfuerzo, recordatorios positivos y artículos que te
-              inspiran.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="cajaImagenTexto">
-        <div class="imagenContainer">
-          <figure>
-             <img src="images/chicosMontana.svg" alt="Ilustración de tres personas escalando una montaña" />
-          </figure>
-        </div>
-        <div class="textoContainer">
-          <p>Sobre nosotros</p>
-          <h2>Descubre la parte humana detrás de este proyecto</h2>
-          <p>No somos perfectos. Pero sabemos lo que duele… y lo que ayuda.</p>
-          <p>
-            Somos tres amigos que conocemos bien el lado oscuro de las
-            adicciones. Hoy, con nuestras historias de recuperación a la
-            espalda, hemos creado Addict Help para acompañar a quienes, como
-            nosotros, necesitan un primer impulso para salir adelante.
-          </p>
-          <h3>Queremos estar donde empieza el cambio.</h3>
-          <p id="boton2">Saber más</p>
-        </div>
-      </section>
-      <section class="cajaConTarjetas">
-        <p>Colabora con Addict Help</p>
-        <h2>Cada pequeño gesto ayuda</h2>
-        <h2>¿Nos ayudas a llegar más lejos?</h2>
-        <div class="tarjetasContainer">
-          <div class="tarjeta" id="tarjeta4">
-            <div id="icono4"></div>
-            <h3>Voluntariado</h3>
-            <p>
-              Tu tiempo y tu talento pueden marcar la diferencia. Infórmate
-              sobre cómo colaborar como voluntario en Addict Help y ser parte
-              activa de este proyecto.
-            </p>
-          </div>
-          <div class="tarjeta" id="tarjeta5">
-            <div id="icono5"></div>
-            <h3>Donaciones</h3>
-            <h4>Toda ayuda cuenta. Y suma.</h4>
-            <p>
-              Puedes hacer una aportación puntual o hacerte socio de nuestra
-              ONG. Y si no puedes colaborar económicamente, también puedes
-              hacerlo en especie: equipamiento, recursos o servicios
-              profesionales.
-            </p>
-          </div>
-          <div class="tarjeta" id="tarjeta6">
-            <div id="icono6"></div>
-            <h3>Colaboraciones</h3>
-            <p>
-              Si eres un centro, empresa o entidad comprometida con la salud y
-              el bienestar, hablemos. Podemos ser tu aliado en la fase de
-              sensibilización y derivar a quienes necesiten tu intervención
-              experta.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="cajaVerde">
-        <p>¡Suscríbete a nuestra newsletter!</p>
-        <p>
-          Recibe las últimas novedades sobre Addict Help, el lanzamiento de
-          nuestra app y otras sorpresas. Tranquilo: solo enviamos contenido
-          útil, sin saturar tu bandeja de entrada.
-        </p>
-        <form class="subscribe-form-container" action="#" method="POST">
-          <input type="email" name="email" placeholder="Tu email" required />
-          <button type="submit">Suscríbete &rarr;</button>
-        </form>
-      </section>
-      <section class="blog">
-        <div class="preBlogText">
-          <p>Blog</p>
-          <h2>Recursos, historias y claves reales para tu recuperación</h2>
-          <p>
-            En este blog compartimos lo que a nosotros nos habría gustado saber
-            cuando empezamos: información clara, herramientas prácticas y
-            reflexiones honestas que pueden ayudarte, estés donde estés en tu
-            proceso
-          </p>
-        </div>
-        <div class="blogContent">
-          <div class="blogPost">
-            <div class="blogImage">
-              <figure>
-                <img src="images/chicoEntrando.svg" alt="Chico entrando" />
-              </figure>
-            </div>
-            <div class="blogText">
-              <h3>Cocaína: El primer paso hacia el cambio</h3>
-              <p>
-                La adicción a la cocaína puede hacerte sentir atrapado, pero el
-                primer paso hacia el cambio es posible y está a tu alcance.
-                Reconocer que existe un problema es fundamental: no eres débil
-                por admitirlo, al contrario, es un acto de valentía. Seguir
-                leyendo
-              </p>
-            </div>
-          </div>
-          <div class="blogPost">
-            <div class="blogImage">
-              <figure>
-                <img src="images/Frame 187.svg" alt="Chico entrando" />
-              </figure>
-            </div>
-            <div class="blogText">
-              <h3>Alcoholismo: un camino de esperanza hacia la recuperación</h3>
-              <p>
-                El alcohol forma parte de nuestra cultura, por eso admitir una
-                adicción al alcohol puede ser tan difícil. Seguir leyendo
-              </p>
-            </div>
-          </div>
-          <div class="blogPost">
-            <div class="blogImage">
-              <figure>
-                <img src="images/ludopatia.svg" alt="Chico entrando" />
-              </figure>
-            </div>
-            <div class="blogText">
-              <h3>
-                Ludopatía: el impacto en la familia y cómo romper el círculo
-                vicioso
-              </h3>
-              <p>
-                La ludopatía (adicción al juego) es una adicción silenciosa que
-                destruye economías familiares, relaciones y la paz en el hogar.
-                Seguir leyendo
-              </p>
-            </div>
-          </div>
-          <div class="blogPost">
-            <div class="blogImage">
-              <figure>
-                <img src="images/ayuda.svg" alt="Chico entrando" />
-              </figure>
-            </div>
-            <div class="blogText">
-              <h3>
-                Acompañar sin perderte: cómo apoyar a un ser querido con
-                adicción
-              </h3>
-              <p>
-                Cuando alguien a quien amas tiene una adicción, toda la familia
-                sufre. Ves a tu ser querido autodestruirse y naturalmente
-                quieres ayudar. Seguir leyendo
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="cajaVerde">
-        <p>
-          Recuperarse no es volver a ser quien eras, es descubrir quién puedes
-          llegar a ser.
-        </p>
-        <p>Descubre qué funciona y quién puede ayudarte.</p>
-      </section>
-      <section class="textAndCards">
-        <div class="textContainer">
-          <p>TESTIMONIOS</p>
-          <h2>Personas que nos conocen, personas que confían</h2>
-          <p>
-            Sus palabras nos emocionan, nos definen y nos empujan a seguir. Esto
-            es lo que opinan quienes han conocido el origen de Addict Help
-          </p>
-        </div>
-        <div class="cardsContainer">
-          <div class="tarjeta" id="tarjeta7">
-            <div id="icono7"></div>
-            <p>
-              Conozco a los 3 y sé que están haciendo un gran trabajo. Son muy
-              profesionales y seguro que harán todo lo posible para conseguir
-              los objetivos.
-            </p>
-            <h3>Jesús - Adicto en recuperación</h3>
-          </div>
-          <div class="tarjeta" id="tarjeta8">
-            <div id="icono8"></div>
-            <p>
-              He visto su plan para la APP y es algo extraordinario. ¡¡Va a
-              ayudar a muchísima gente!!
-            </p>
-            <h3>Cristina - Adicta en recuperación</h3>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footerContent">
-        <div class="footerLogo">
-          <figure>
-            <img src="images/footer logo.svg" alt="Logo" />
-          </figure>
-          <p>Trabajamos en red con profesionales y centros acreditados.</p>
-          
-          
-        </div>
-        <div class="footerLinks">
-          <h2>Secciones</h2>
+    <div class="master-wrapper">
+      <header>
+        <figure>
+          <img src="images/logo-item.svg" alt="Logo" />
+        </figure>
+        <nav>
           <ul>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Home</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Sobre nosotros</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">¿Conoces a un adicto?</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Colabora con Nosotros</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Profesionales y centros</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Colabora</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Blog</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Preguntas Frecuentes</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Contacta con nosotros</a></li>
           </ul>
-          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="cajaImagenTexto section-container" id="hero">
+          <div class="textoContainer">
+            <h1 id="textoPrincipal">
+              ¿Quieres <span class="text-highlight-blue">superar</span> tu
+              <span class="text-highlight-red">adicción</span>?
+            </h1>
+            <p>Tu proceso importa. Y no tienes que hacerlo solo.</p>
+            <p>
+              Pronto lanzaremos la app de Addict Help, pensada para acompañarte en
+              tu recuperación: íntima personalizada y llena de motivación.
+            </p>
+            <p>
+              Suscríbete a nuestra newsletter y sé de los primeros en conocerla.
+            </p>
+            <a href="#" id="boton1">Suscríbete</a>
+            <h2>
+              El primer paso hacia tu recuperación, con el respaldo de
+              profesionales especializados.
+            </h2>
+          </div>
+
+  <div id="miAnimacion"></div>
+
+
+          <div class="imagenContainer">
+            <figure>
+              <img src="images/chicoYPuerta.svg" alt="Ilustración de un chico decidiendo frente a dos puertas" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="cajaVerde carousel-section">
+          <div class="swiper sabias-que-carousel">
+            <div class="swiper-wrapper">
+              <!-- Las diapositivas se insertan aquí con JavaScript -->
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </section>
+        
+        <section class="cajaConTarjetas porque-nosotros-section section-container">
+          <p id="section-label">¿Por qué nosotros?</p>
+          <h2>
+            ¿Por qué elegir nuestra app para tu recuperación?<br>Está pensada desde dentro de las adicciones.
+          </h2>
+          <div class="tarjetasContainer">
+            <div class="tarjeta" id="tarjeta1">
+              <div id="icono1"></div>
+              <h3>Seguimiento Personalizado</h3>
+              <h4>Estamos contigo en cada paso, sin juzgarte, sin soltarte.</h4>
+              <p>
+                Tu recuperación es única, y así debe ser tu camino. Con la app
+                podrás registrar tus hábitos, avances y emociones, y recibir
+                orientación adaptada a ti. …y, cuando llegue tu momento, te
+                orientamos hacia el recurso profesional que mejor encaje contigo.
+              </p>
+            </div>
+            <div class="tarjeta" id="tarjeta2">
+              <div id="icono2"></div>
+              <h3>En la Intimidad</h3>
+              <h4>Porque mereces cuidarte sin sentirte expuesto.</h4>
+              <p>
+                Recupérate a tu ritmo, sin presiones ni miradas ajenas. Nuestra
+                app te ofrece un espacio seguro, confidencial y accesible para
+                trabajar en ti, desde donde estés.
+              </p>
+            </div>
+            <div class="tarjeta" id="tarjeta3">
+              <div id="icono3"></div>
+              <h3>Motivación Continua</h3>
+              <h4>Pequeños pasos que suman... y transforman.</h4>
+              <p>
+                Sabemos que hay días más difíciles que otros. La app te ayuda a
+                mantener viva tu motivación con retos alcanzables, logros que
+                celebran tu esfuerzo, recordatorios positivos y artículos que te
+                inspiran.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="cajaImagenTexto">
+          <div class="imagenContainer">
+            <figure>
+               <img src="images/chicosMontana.svg" alt="Ilustración de tres personas escalando una montaña" />
+            </figure>
+          </div>
+          <div class="textoContainer">
+            <p>Sobre nosotros</p>
+            <h2>Descubre la parte humana detrás de este proyecto</h2>
+            <p>No somos perfectos. Pero sabemos lo que duele… y lo que ayuda.</p>
+            <p>
+              Somos tres amigos que conocemos bien el lado oscuro de las
+              adicciones. Hoy, con nuestras historias de recuperación a la
+              espalda, hemos creado Addict Help para acompañar a quienes, como
+              nosotros, necesitan un primer impulso para salir adelante.
+            </p>
+            <h3>Queremos estar donde empieza el cambio.</h3>
+            <p id="boton2">Saber más</p>
+          </div>
+        </section>
+        <section class="cajaConTarjetas">
+          <p>Colabora con Addict Help</p>
+          <h2>Cada pequeño gesto ayuda</h2>
+          <h2>¿Nos ayudas a llegar más lejos?</h2>
+          <div class="tarjetasContainer">
+            <div class="tarjeta" id="tarjeta4">
+              <div id="icono4"></div>
+              <h3>Voluntariado</h3>
+              <p>
+                Tu tiempo y tu talento pueden marcar la diferencia. Infórmate
+                sobre cómo colaborar como voluntario en Addict Help y ser parte
+                activa de este proyecto.
+              </p>
+            </div>
+            <div class="tarjeta" id="tarjeta5">
+              <div id="icono5"></div>
+              <h3>Donaciones</h3>
+              <h4>Toda ayuda cuenta. Y suma.</h4>
+              <p>
+                Puedes hacer una aportación puntual o hacerte socio de nuestra
+                ONG. Y si no puedes colaborar económicamente, también puedes
+                hacerlo en especie: equipamiento, recursos o servicios
+                profesionales.
+              </p>
+            </div>
+            <div class="tarjeta" id="tarjeta6">
+              <div id="icono6"></div>
+              <h3>Colaboraciones</h3>
+              <p>
+                Si eres un centro, empresa o entidad comprometida con la salud y
+                el bienestar, hablemos. Podemos ser tu aliado en la fase de
+                sensibilización y derivar a quienes necesiten tu intervención
+                experta.
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="cajaVerde subscribe-box">
+          <p>¡Suscríbete a nuestra newsletter!</p>
+          <p>
+            Recibe las últimas novedades sobre Addict Help, el lanzamiento de
+            nuestra app y otras sorpresas. Tranquilo: solo enviamos contenido
+            útil, sin saturar tu bandeja de entrada.
+          </p>
+          <form class="subscribe-form-container" action="#" method="POST">
+            <input type="email" name="email" placeholder="Tu email" required />
+            <button type="submit">Suscríbete &rarr;</button>
+          </form>
+        </section>
+        
+        <section class="blog">
+          <div class="preBlogText">
+            <p>Blog</p>
+            <h2>Recursos, historias y claves reales para tu recuperación</h2>
+            <p>
+              En este blog compartimos lo que a nosotros nos habría gustado saber
+              cuando empezamos: información clara, herramientas prácticas y
+              reflexiones honestas que pueden ayudarte, estés donde estés en tu
+              proceso
+            </p>
+          </div>
+          <div class="blogContent">
+            <div class="blogPost">
+              <div class="blogImage">
+                <figure>
+                  <img src="images/chicoEntrando.svg" alt="Chico entrando" />
+                </figure>
+              </div>
+              <div class="blogText">
+                <h3>Cocaína: El primer paso hacia el cambio</h3>
+                <p>
+                  La adicción a la cocaína puede hacerte sentir atrapado, pero el
+                  primer paso hacia el cambio es posible y está a tu alcance.
+                  Reconocer que existe un problema es fundamental: no eres débil
+                  por admitirlo, al contrario, es un acto de valentía. Seguir
+                  leyendo
+                </p>
+              </div>
+            </div>
+            <div class="blogPost">
+              <div class="blogImage">
+                <figure>
+                  <img src="images/Frame 187.svg" alt="Chico entrando" />
+                </figure>
+              </div>
+              <div class="blogText">
+                <h3>Alcoholismo: un camino de esperanza hacia la recuperación</h3>
+                <p>
+                  El alcohol forma parte de nuestra cultura, por eso admitir una
+                  adicción al alcohol puede ser tan difícil. Seguir leyendo
+                </p>
+              </div>
+            </div>
+            <div class="blogPost">
+              <div class="blogImage">
+                <figure>
+                  <img src="images/ludopatia.svg" alt="Chico entrando" />
+                </figure>
+              </div>
+              <div class="blogText">
+                <h3>
+                  Ludopatía: el impacto en la familia y cómo romper el círculo
+                  vicioso
+                </h3>
+                <p>
+                  La ludopatía (adicción al juego) es una adicción silenciosa que
+                  destruye economías familiares, relaciones y la paz en el hogar.
+                  Seguir leyendo
+                </p>
+              </div>
+            </div>
+            <div class="blogPost">
+              <div class="blogImage">
+                <figure>
+                  <img src="images/ayuda.svg" alt="Chico entrando" />
+                </figure>
+              </div>
+              <div class="blogText">
+                <h3>
+                  Acompañar sin perderte: cómo apoyar a un ser querido con
+                  adicción
+                </h3>
+                <p>
+                  Cuando alguien a quien amas tiene una adicción, toda la familia
+                  sufre. Ves a tu ser querido autodestruirse y naturalmente
+                  quieres ayudar. Seguir leyendo
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="cajaVerde quote-box">
+          <p>
+            Recuperarse no es volver a ser quien eras, es descubrir quién puedes
+            llegar a ser.
+          </p>
+          <p>Descubre qué funciona y quién puede ayudarte.</p>
+        </section>
+        
+        <section class="textAndCards">
+          <div class="textContainer">
+            <p>TESTIMONIOS</p>
+            <h2>Personas que nos conocen, personas que confían</h2>
+            <p>
+              Sus palabras nos emocionan, nos definen y nos empujan a seguir. Esto
+              es lo que opinan quienes han conocido el origen de Addict Help
+            </p>
+          </div>
+          <div class="cardsContainer">
+            <div class="tarjeta" id="tarjeta7">
+              <div id="icono7"></div>
+              <p>
+                Conozco a los 3 y sé que están haciendo un gran trabajo. Son muy
+                profesionales y seguro que harán todo lo posible para conseguir
+                los objetivos.
+              </p>
+              <h3>Jesús - Adicto en recuperación</h3>
+            </div>
+            <div class="tarjeta" id="tarjeta8">
+              <div id="icono8"></div>
+              <p>
+                He visto su plan para la APP y es algo extraordinario. ¡¡Va a
+                ayudar a muchísima gente!!
+              </p>
+              <h3>Cristina - Adicta en recuperación</h3>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footerContent">
+          <div class="footerLogo">
+            <figure>
+              <img src="images/footer logo.svg" alt="Logo" />
+            </figure>
+            <p>Trabajamos en red con profesionales y centros acreditados.</p>
+          </div>
+          <div class="footerLinks">
+            <h2>Secciones</h2>
+            <ul>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Sobre nosotros</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">¿Conoces a un adicto?</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Colabora con Nosotros</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Profesionales y centros</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footerLinks">
+            <h2>Contacto</h2>
+            <ul>
+              <li>+34 649 025 594</li>
+              <li>info@addicthelp.es</li>
+            </ul>
+          </div>
+          <div class="footerLinks">
+            <h2>Información</h2>
+            <ul>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Faqs</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Términos de uso</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Aviso legal</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Política de Privacidad</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Política de RRSS</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Política de Cookies</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footerLinks">
-          <h2>Contacto</h2>
+        <hr/>
+        <div class="footerSocialMedia">
           <ul>
-            <li>+34 649 025 594</li>
-            <li>info@addicthelp.es</li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/twitter.svg" alt="Twitter"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/tiktok.svg" alt="TikTok"></a></li>
           </ul>
         </div>
-        <div class="footerLinks">
-          <h2>Información</h2>
-          <ul>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Faqs</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Términos de uso</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Aviso legal</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Política de Privacidad</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Política de RRSS</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Política de Cookies</a></li>
-          </ul>
+        <figure>
+              <img src="images/logo-cdmon-300x200-fullwhite.png" alt="Logo" />
+            </figure>
+        <div class="footerText">
+          <p>copyright 2025 @addicthelp Todos los derechos reservados.</p>
         </div>
-      </div>
-      <hr/>
-      <div class="footerSocialMedia">
-        <ul>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook"></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/twitter.svg" alt="Twitter"></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg" alt="Instagram"></a></li>
-          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/tiktok.svg" alt="TikTok"></a></li>
-        </ul>
-      </div>
-      <figure>
-            <img src="images/logo-cdmon-300x200-fullwhite.png" alt="Logo" />
-          </figure>
-      <div class="footerText">
-        <p>copyright 2025 @addicthelp Todos los derechos reservados.</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+
+    <script src="lottie.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    lottie.loadAnimation({
+      container: document.getElementById('miAnimacion'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'chicoYPuerta.json' // asegúrate de que está en la misma carpeta
+    });
+  });
+</script>
+
   </body>
 </html>
