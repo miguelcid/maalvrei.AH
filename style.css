@@ -1,29 +1,13 @@
-/* style.css */
-
-/* --- PALETA DE COLORES Y ESTILOS GLOBALES --- */
-:root {
-  --color-black: #0A0C0C;
-  --color-white: #F4F9F9;
-  --color-primary-red: #EA5A4C;
-  --color-primary-red-hover: #d1483c;
-  --color-green-light: #C3D973;
-  --color-green-dark: #7D8C45;
-  --color-highlight-blue: #2AB5B8;
-}
-
-/* ... resto de tu CSS existente ... */
-
-/* Estilos finales incl. footer, etc. */
-
-/* --- Estilos responsive para móviles (≤480px) --- */
+/* --- Responsive para móviles (≤480px) --- */
 @media only screen and (max-width: 480px) {
-  /* Wrapper general */
+  /* Ajuste de márgenes generales */
   .master-wrapper {
     padding: 0 10px;
   }
 
-  /* Header y navegación */
+  /* Header y navegación en columna */
   header {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -31,6 +15,7 @@
     width: 100%;
   }
   nav ul {
+    display: flex;
     flex-direction: column;
     width: 100%;
   }
@@ -38,8 +23,9 @@
     margin: 5px 0;
   }
 
-  /* Hero */
+  /* Hero: animación y texto uno encima de otro */
   #hero {
+    display: flex;
     flex-direction: column-reverse;
     height: auto;
     margin: 20px 0;
@@ -60,14 +46,16 @@
   #boton1 {
     width: 100%;
     font-size: 18px;
-    padding: 10px;
+    padding: 10px 0;
+    box-sizing: border-box;
   }
+  /* Lottie */
   #miAnimacion {
     width: 100%;
     height: auto;
   }
 
-  /* Carrusel */
+  /* Carrusel full‐width */
   .carousel-section {
     padding: 0;
   }
@@ -75,8 +63,9 @@
     width: 100%;
   }
 
-  /* Por qué nosotros */
+  /* “Por qué nosotros” en columna */
   .porque-nosotros-section .tarjetasContainer {
+    display: flex;
     flex-direction: column;
     height: auto;
   }
@@ -85,8 +74,9 @@
     margin: 10px 0;
   }
 
-  /* Secciones con imagen + texto */
+  /* Secciones imagen+texto */
   .cajaImagenTexto {
+    display: flex;
     flex-direction: column;
     height: auto;
   }
@@ -95,8 +85,9 @@
     height: auto;
   }
 
-  /* Secciones de tarjetas múltiples */
+  /* Cajas de tarjetas múltiples */
   .cajaConTarjetas .tarjetasContainer {
+    display: flex;
     flex-direction: column;
     height: auto;
   }
@@ -105,26 +96,29 @@
     margin: 10px 0;
   }
 
-  /* Cajas verdes (subscribe, quote) */
+  /* Cajas verdes (suscripción, cita) */
   .subscribe-box,
   .quote-box {
     padding: 20px 10px;
   }
   .subscribe-form-container {
+    display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  /* Blog */
+  /* Blog en columna */
   .blogContent {
+    display: flex;
     flex-direction: column;
   }
   .blogPost {
     max-width: 100%;
   }
 
-  /* Testimonios */
+  /* Testimonios en columna */
   .textAndCards {
+    display: flex;
     flex-direction: column;
   }
   .cardsContainer {
@@ -135,8 +129,9 @@
     text-align: center;
   }
 
-  /* Footer */
+  /* Footer en columna */
   .footerContent {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
