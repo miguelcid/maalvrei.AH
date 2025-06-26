@@ -17,14 +17,6 @@
         height: 851px;
         margin: auto;
       }
-
-      /* Media query: aplica en pantallas con ancho máximo de 480 px */
-      @media only screen and (max-width: 480px) {
-        #miAnimacion {
-          width: 100%;
-          height: auto;
-        }
-      }
     </style>
   </head>
 
@@ -74,7 +66,7 @@
         <section class="cajaVerde carousel-section">
           <div class="swiper sabias-que-carousel">
             <div class="swiper-wrapper">
-              <!-- Diapositivas insertadas por JavaScript -->
+              <!-- Las diapositivas se insertan aquí con JavaScript -->
             </div>
           </div>
           <div class="swiper-button-prev"></div>
@@ -84,8 +76,7 @@
         <section class="cajaConTarjetas porque-nosotros-section section-container">
           <p id="section-label">¿Por qué nosotros?</p>
           <h2>
-            ¿Por qué elegir nuestra app para tu recuperación?<br />
-            Está pensada desde dentro de las adicciones.
+            ¿Por qué elegir nuestra app para tu recuperación?<br>Está pensada desde dentro de las adicciones.
           </h2>
           <div class="tarjetasContainer">
             <div class="tarjeta" id="tarjeta1">
@@ -126,10 +117,7 @@
         <section class="cajaImagenTexto">
           <div class="imagenContainer">
             <figure>
-              <img
-                src="images/chicosMontana.svg"
-                alt="Ilustración de tres personas escalando una montaña"
-              />
+              <img src="images/chicosMontana.svg" alt="Ilustración de tres personas escalando una montaña" />
             </figure>
           </div>
           <div class="textoContainer">
@@ -213,17 +201,14 @@
             <div class="blogPost">
               <div class="blogImage">
                 <figure>
-                  <img
-                    src="images/chicoEntrando.svg"
-                    alt="Chico entrando"
-                  />
+                  <img src="images/chicoEntrando.svg" alt="Chico entrando" />
                 </figure>
               </div>
               <div class="blogText">
                 <h3>Cocaína: El primer paso hacia el cambio</h3>
                 <p>
-                  La adicción a la cocaína puede hacerte sentir atrapado, pero
-                  el primer paso hacia el cambio es posible y está a tu alcance.
+                  La adicción a la cocaína puede hacerte sentir atrapado, pero el
+                  primer paso hacia el cambio es posible y está a tu alcance.
                   Reconocer que existe un problema es fundamental: no eres débil
                   por admitirlo, al contrario, es un acto de valentía. Seguir
                   leyendo
@@ -359,29 +344,13 @@
             </ul>
           </div>
         </div>
-        <hr />
+        <hr/>
         <div class="footerSocialMedia">
           <ul>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook.svg" alt="Facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="images/twitter.svg" alt="Twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram.svg" alt="Instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src="images/tiktok.svg" alt="TikTok" />
-              </a>
-            </li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/twitter.svg" alt="Twitter"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/tiktok.svg" alt="TikTok"></a></li>
           </ul>
         </div>
         <figure>
@@ -399,11 +368,11 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         lottie.loadAnimation({
-          container: document.getElementById("miAnimacion"),
-          renderer: "svg",
+          container: document.getElementById('miAnimacion'),
+          renderer: 'svg',
           loop: true,
           autoplay: true,
-          path: "chicoYPuerta.json"
+          path: 'chicoYPuerta.json' // asegúrate de que está en la misma carpeta
         });
       });
     </script>
