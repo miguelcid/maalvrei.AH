@@ -1,4 +1,5 @@
 /* style.css */
+
 /* --- PALETA DE COLORES Y ESTILOS GLOBALES --- */
 :root {
   --color-black: #0A0C0C;
@@ -30,7 +31,6 @@ body {
 .text-highlight-blue {
   color: var(--color-highlight-blue);
 }
-
 .text-highlight-red {
   color: var(--color-primary-red);
 }
@@ -82,18 +82,15 @@ nav ul li a {
   font-weight: 400;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
-
 nav ul li:not(:last-child) a:hover {
   color: var(--color-primary-red);
 }
-
 nav ul li:last-child a {
   background-color: var(--color-primary-red);
   border-radius: 15px;
   color: var(--color-white);
   padding: 5px 10px;
 }
-
 nav ul li:last-child a:hover {
   background-color: var(--color-primary-red-hover);
   color: var(--color-white);
@@ -108,7 +105,6 @@ nav ul li:last-child a:hover {
   align-items: center;
   justify-content: space-between;
 }
-
 #hero .textoContainer {
   width: 771px;
   display: flex;
@@ -117,7 +113,6 @@ nav ul li:last-child a:hover {
   gap: 48px;
   padding: 0 20px;
 }
-
 #hero #textoPrincipal {
   font-size: 68px;
   font-weight: 800;
@@ -125,27 +120,23 @@ nav ul li:last-child a:hover {
   width: 100%;
   margin: 0;
 }
-
 #hero .textoContainer p:nth-of-type(1) {
   font-size: 28px;
   font-weight: 500;
   margin: 0;
 }
-
 #hero .textoContainer p:nth-of-type(2),
 #hero .textoContainer p:nth-of-type(3) {
   font-size: 20px;
   font-weight: 300;
   margin: 0;
 }
-
 #hero .textoContainer h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
 }
-
 #hero #boton1 {
   display: inline-block;
   background-color: var(--color-primary-red);
@@ -160,7 +151,6 @@ nav ul li:last-child a:hover {
   text-align: center;
   transition: background-color 0.2s ease;
 }
-
 #hero #boton1:hover {
   background-color: var(--color-primary-red-hover);
 }
@@ -176,25 +166,21 @@ nav ul li:last-child a:hover {
   box-sizing: border-box;
   color: var(--color-white);
 }
-
 .subscribe-box,
 .quote-box {
   padding: 40px 20px;
   text-align: center;
   margin-top: 10px;
 }
-
 .subscribe-box p,
 .quote-box p {
   max-width: 1200px;
 }
-
 .subscribe-box p:first-child,
 .quote-box p:first-child {
   font-size: 25px;
   font-weight: bold;
 }
-
 .subscribe-box p:nth-child(2),
 .quote-box p:nth-child(2) {
   font-size: 20px;
@@ -208,18 +194,15 @@ nav ul li:last-child a:hover {
   padding: 0 80px;
   margin-top: 10px;
 }
-
 .sabias-que-carousel {
   width: 1596px;
   height: 100%;
   margin: 0 auto;
 }
-
 .swiper-slide {
   position: relative;
   overflow: hidden;
 }
-
 .slide-content {
   position: absolute;
   top: 50%;
@@ -229,14 +212,12 @@ nav ul li:last-child a:hover {
   max-width: 1300px;
   text-align: center;
 }
-
 .swiper-slide .pregunta {
   font-size: 40px;
   font-weight: 700;
   color: var(--color-white);
   margin: 0 0 24px 0;
 }
-
 .swiper-slide .respuesta {
   font-size: 28px;
   font-weight: 500;
@@ -244,7 +225,6 @@ nav ul li:last-child a:hover {
   opacity: 0.9;
   margin: 0;
 }
-
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--color-white) !important;
@@ -264,7 +244,6 @@ nav ul li:last-child a:hover {
   align-items: center;
   gap: 24px;
 }
-
 .porque-nosotros-section h2 {
   font-size: 40px;
   font-weight: 700;
@@ -272,7 +251,6 @@ nav ul li:last-child a:hover {
   line-height: 1.3;
   margin: 0;
 }
-
 .porque-nosotros-section .tarjetasContainer {
   display: flex;
   align-items: center;
@@ -282,15 +260,106 @@ nav ul li:last-child a:hover {
   gap: 0;
 }
 
-/* … aquí siguen todos los estilos de tarjetas, blog, footer, etc. … */
+/* --- ESTILOS PARA TARJETAS E ICONOS (mantén aquí tus reglas originales) --- */
+/* … */
+
+/* --- ESTILOS PARA SECCIONES IMAGEN+TEXTO --- */
+.cajaImagenTexto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48px 0;
+}
+.imagenContainer img,
+.figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- ESTILOS PARA BLOG --- */
+.blog {
+  padding: 48px 0;
+}
+.blog .preBlogText {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.blogContent {
+  display: flex;
+  justify-content: space-between;
+}
+.blogPost {
+  width: 23%;
+}
+.blogImage img {
+  width: 100%;
+  height: auto;
+}
+
+/* --- ESTILOS PARA TESTIMONIOS --- */
+.textAndCards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 48px 0;
+}
+.textAndCards .textContainer {
+  width: 40%;
+}
+.textAndCards .cardsContainer {
+  display: flex;
+  gap: 16px;
+}
+.textAndCards .tarjeta {
+  width: 28%;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* --- ESTILOS PARA FOOTER --- */
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 48px 0;
+}
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+.footerLinks ul,
+.footerSocialMedia ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.footerLinks ul li,
+.footerSocialMedia ul li {
+  margin: 0 10px;
+}
+.footerText {
+  color: var(--color-white);
+}
 
 /* --- FIN DE TU CSS ORIGINAL --- */
 
 /* --- Responsive para móviles (≤480px) --- */
 @media only screen and (max-width: 480px) {
+  /* 1) Anular el ancho fijo de las secciones */
+  .section-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  /* 2) Ajuste general del wrapper */
   .master-wrapper {
     padding: 0 10px;
   }
+
+  /* Header y navegación */
   header {
     display: flex;
     flex-direction: column;
@@ -300,13 +369,14 @@ nav ul li:last-child a:hover {
     width: 100%;
   }
   nav ul {
-    display: flex;
     flex-direction: column;
     width: 100%;
   }
   nav ul li {
     margin: 5px 0;
   }
+
+  /* Hero: texto y animación uno encima de otro */
   #hero {
     display: flex;
     flex-direction: column-reverse;
@@ -339,24 +409,27 @@ nav ul li:last-child a:hover {
     width: 100%;
     height: auto;
   }
+
+  /* Carrusel */
   .carousel-section {
     padding: 0;
   }
   .sabias-que-carousel {
     width: 100%;
   }
+
+  /* “Por qué nosotros” en columna */
   .porque-nosotros-section .tarjetasContainer {
-    display: flex;
     flex-direction: column;
     gap: 20px;
     height: auto;
   }
   .porque-nosotros-section .tarjeta {
     width: 100%;
-    margin: 0;
   }
+
+  /* Secciones imagen+texto */
   .cajaImagenTexto {
-    display: flex;
     flex-direction: column;
     margin: 20px 0;
   }
@@ -369,15 +442,17 @@ nav ul li:last-child a:hover {
     width: 100%;
     height: auto;
   }
+
+  /* Secciones de tarjetas múltiples */
   .cajaConTarjetas .tarjetasContainer {
-    display: flex;
     flex-direction: column;
     gap: 20px;
   }
   .cajaConTarjetas .tarjeta {
     width: 100%;
-    margin: 0;
   }
+
+  /* Cajas verdes (suscripción, cita) */
   .subscribe-box,
   .quote-box {
     padding: 20px 10px;
@@ -387,6 +462,8 @@ nav ul li:last-child a:hover {
     flex-direction: column;
     width: 100%;
   }
+
+  /* Blog en columna */
   .blogContent {
     display: flex;
     flex-direction: column;
@@ -395,6 +472,8 @@ nav ul li:last-child a:hover {
     width: 100%;
     margin: 20px 0;
   }
+
+  /* Testimonios en columna */
   .textAndCards {
     display: flex;
     flex-direction: column;
@@ -409,8 +488,9 @@ nav ul li:last-child a:hover {
     padding: 0 10px;
     text-align: center;
   }
+
+  /* Footer en columna */
   .footerContent {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
