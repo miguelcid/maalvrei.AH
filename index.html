@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -9,21 +10,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-<style>
-  #miAnimacion {
-    width: 769px;
-    height: 851px;
-    margin: auto;
-  }
+    <style>
+      /* Animación Lottie: tamaño por defecto */
+      #miAnimacion {
+        width: 769px;
+        height: 851px;
+        margin: auto;
+      }
 
-  /* Override en móviles */
-  @media only screen and (max-width: 480px) {
-    #miAnimacion {
-      width: 100%;
-      height: auto;
-    }
-  }
-</style>
+      /* Media query: aplica en pantallas con ancho máximo de 480 px */
+      @media only screen and (max-width: 480px) {
+        #miAnimacion {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -44,6 +46,7 @@
           </ul>
         </nav>
       </header>
+
       <main>
         <section class="cajaImagenTexto section-container" id="hero">
           <div class="textoContainer">
@@ -65,26 +68,24 @@
               profesionales especializados.
             </h2>
           </div>
-
-	  <div id="miAnimacion">
-			  
-	  </div>
+          <div id="miAnimacion"></div>
         </section>
 
         <section class="cajaVerde carousel-section">
           <div class="swiper sabias-que-carousel">
             <div class="swiper-wrapper">
-              <!-- Las diapositivas se insertan aquí con JavaScript -->
+              <!-- Diapositivas insertadas por JavaScript -->
             </div>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </section>
-        
+
         <section class="cajaConTarjetas porque-nosotros-section section-container">
           <p id="section-label">¿Por qué nosotros?</p>
           <h2>
-            ¿Por qué elegir nuestra app para tu recuperación?<br>Está pensada desde dentro de las adicciones.
+            ¿Por qué elegir nuestra app para tu recuperación?<br />
+            Está pensada desde dentro de las adicciones.
           </h2>
           <div class="tarjetasContainer">
             <div class="tarjeta" id="tarjeta1">
@@ -121,10 +122,14 @@
             </div>
           </div>
         </section>
+
         <section class="cajaImagenTexto">
           <div class="imagenContainer">
             <figure>
-               <img src="images/chicosMontana.svg" alt="Ilustración de tres personas escalando una montaña" />
+              <img
+                src="images/chicosMontana.svg"
+                alt="Ilustración de tres personas escalando una montaña"
+              />
             </figure>
           </div>
           <div class="textoContainer">
@@ -141,6 +146,7 @@
             <p id="boton2">Saber más</p>
           </div>
         </section>
+
         <section class="cajaConTarjetas">
           <p>Colabora con Addict Help</p>
           <h2>Cada pequeño gesto ayuda</h2>
@@ -178,7 +184,7 @@
             </div>
           </div>
         </section>
-        
+
         <section class="cajaVerde subscribe-box">
           <p>¡Suscríbete a nuestra newsletter!</p>
           <p>
@@ -191,7 +197,7 @@
             <button type="submit">Suscríbete &rarr;</button>
           </form>
         </section>
-        
+
         <section class="blog">
           <div class="preBlogText">
             <p>Blog</p>
@@ -200,21 +206,24 @@
               En este blog compartimos lo que a nosotros nos habría gustado saber
               cuando empezamos: información clara, herramientas prácticas y
               reflexiones honestas que pueden ayudarte, estés donde estés en tu
-              proceso
+              proceso.
             </p>
           </div>
           <div class="blogContent">
             <div class="blogPost">
               <div class="blogImage">
                 <figure>
-                  <img src="images/chicoEntrando.svg" alt="Chico entrando" />
+                  <img
+                    src="images/chicoEntrando.svg"
+                    alt="Chico entrando"
+                  />
                 </figure>
               </div>
               <div class="blogText">
                 <h3>Cocaína: El primer paso hacia el cambio</h3>
                 <p>
-                  La adicción a la cocaína puede hacerte sentir atrapado, pero el
-                  primer paso hacia el cambio es posible y está a tu alcance.
+                  La adicción a la cocaína puede hacerte sentir atrapado, pero
+                  el primer paso hacia el cambio es posible y está a tu alcance.
                   Reconocer que existe un problema es fundamental: no eres débil
                   por admitirlo, al contrario, es un acto de valentía. Seguir
                   leyendo
@@ -273,7 +282,7 @@
             </div>
           </div>
         </section>
-        
+
         <section class="cajaVerde quote-box">
           <p>
             Recuperarse no es volver a ser quien eras, es descubrir quién puedes
@@ -281,14 +290,14 @@
           </p>
           <p>Descubre qué funciona y quién puede ayudarte.</p>
         </section>
-        
+
         <section class="textAndCards">
           <div class="textContainer">
             <p>TESTIMONIOS</p>
             <h2>Personas que nos conocen, personas que confían</h2>
             <p>
               Sus palabras nos emocionan, nos definen y nos empujan a seguir. Esto
-              es lo que opinan quienes han conocido el origen de Addict Help
+              es lo que opinan quienes han conocido el origen de Addict Help.
             </p>
           </div>
           <div class="cardsContainer">
@@ -312,6 +321,7 @@
           </div>
         </section>
       </main>
+
       <footer>
         <div class="footerContent">
           <div class="footerLogo">
@@ -349,18 +359,34 @@
             </ul>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div class="footerSocialMedia">
           <ul>
-            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook"></a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/twitter.svg" alt="Twitter"></a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg" alt="Instagram"></a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="images/tiktok.svg" alt="TikTok"></a></li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.svg" alt="Twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="images/tiktok.svg" alt="TikTok" />
+              </a>
+            </li>
           </ul>
         </div>
         <figure>
-              <img src="images/logo-cdmon-300x200-fullwhite.png" alt="Logo" />
-            </figure>
+          <img src="images/logo-cdmon-300x200-fullwhite.png" alt="Logo" />
+        </figure>
         <div class="footerText">
           <p>copyright 2025 @addicthelp Todos los derechos reservados.</p>
         </div>
@@ -369,19 +395,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js" defer></script>
-
     <script src="lottie.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    lottie.loadAnimation({
-      container: document.getElementById('miAnimacion'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: 'chicoYPuerta.json' // asegúrate de que está en la misma carpeta
-    });
-  });
-</script>
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        lottie.loadAnimation({
+          container: document.getElementById("miAnimacion"),
+          renderer: "svg",
+          loop: true,
+          autoplay: true,
+          path: "chicoYPuerta.json"
+        });
+      });
+    </script>
   </body>
 </html>
