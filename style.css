@@ -8,6 +8,82 @@
   --color-green-dark: #7D8C45;
   --color-highlight-blue: #2AB5B8;
 }
+/* --- Estilos responsive para móviles (≤480px) --- */
+@media only screen and (max-width: 480px) {
+  /* Contenedores generales */
+  .section-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* Header y navegación */
+  header {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  /* Sección hero */
+  #hero {
+    height: auto;
+    padding: 20px 0;
+  }
+  .cajaImagenTexto {
+    flex-direction: column;
+    height: auto;
+  }
+  .cajaImagenTexto img {
+    width: 100%;
+    height: auto;
+  }
+  #hero .textoContainer,
+  .textoContainer {
+    width: 100%;
+    padding: 0 10px;
+  }
+  #hero .textoContainer h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  #hero .textoContainer p {
+    font-size: 16px;
+  }
+
+  /* Formulario de suscripción */
+  .subscribe-form-container {
+    flex-direction: column;
+  }
+
+  /* Blog y tarjetas */
+  .blogContent {
+    flex-direction: column;
+    width: 100%;
+  }
+  .blogPost {
+    max-width: 100%;
+  }
+  .textAndCards {
+    flex-direction: column;
+    width: 100%;
+  }
+  .textAndCards .cardsContainer {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+  .textAndCards .tarjeta {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 
 body {
   margin: 0;
